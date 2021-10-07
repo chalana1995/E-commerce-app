@@ -1,6 +1,7 @@
-import { Search } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import { Badge } from "@material-ui/core";
 
 const NavBar = () => {
   return (
@@ -9,12 +10,22 @@ const NavBar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            Input
+            <Input />
             <Search />
           </SearchContainer>
         </Left>
-        <Center>Center</Center>
-        <Right>Right</Right>
+        <Center>
+          <Logo>LAMA</Logo>
+        </Center>
+        <Right>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGNIN</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={4} color="secondary">
+              <ShoppingCartOutlined />
+            </Badge>
+          </MenuItem>
+        </Right>
       </Wrapper>
     </Container>
   );
@@ -45,15 +56,31 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 1px solid lightgray;
+  border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+`;
+
+const Input = styled.input`
+  border: none;
 `;
 
 const Center = styled.div`
   flex: 1;
+  text-align: center;
+`;
+
+const Logo = styled.h1`
+  font-weight: bold;
 `;
 
 const Right = styled.div`
   flex: 1;
+`;
+
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
 `;
