@@ -1,7 +1,7 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.ibb.co/XsdmR2c/1.png",
+    img: "https://www.pngkey.com/png/full/443-4434952_jacket-frock-suit-png-free-background-top-amazon.png",
     title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",
@@ -67,7 +67,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: "https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    img: "https://pngimg.com/uploads/dress/dress_PNG157.png",
   },
   {
     id: 8,
