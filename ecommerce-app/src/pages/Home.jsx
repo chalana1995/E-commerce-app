@@ -1,6 +1,7 @@
 import React from "react";
 import Announcement from "../components/Announcement";
 import Catergories from "../components/Catergories";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
@@ -15,6 +16,7 @@ const Home = () => {
       <Catergories />
       <Products />
       <Newsletter />
+      <Footer />
     </div>
   );
 };
